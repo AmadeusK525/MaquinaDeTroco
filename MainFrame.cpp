@@ -162,8 +162,11 @@ void MainFrame::open(wxCommandEvent& event) {
     wxDirDialog* open = new wxDirDialog(this, "Escolha a pasta para abrir");
 
     if (open->ShowModal() == wxID_OK) {
-        currentPath = open->GetPath();
-        load();
+
+        if (currentPath != open->GetPath()) {
+            currentPath = open->GetPath();
+            load();
+        }
     }
 
     delete open;
@@ -207,6 +210,8 @@ void MainFrame::load() {
             log->SetItem(curLog, 1, timeString);
             log->SetItem(curLog++, 2, dateString);
         }
+
+        setLast();
     } else {
         isSaved = false;
         currentPath = "";
