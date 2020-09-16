@@ -4,4 +4,4 @@
 A biblioteca requer heap allocation, mas limpa a memória por si só utilizando uma hierarquia de janelas, então eu praticamente nunca uso 'delete' no programa, mas 
 não há vazamento de memória. 
   
-  O executável foi linkado estaticamente, então o arquivo deve funcionar por si só normalmente.
+  O executável foi linkado estaticamente, então o arquivo deve funcionar por si só normalmente. Ele gera um arquivo chamado LocalTroco.txt ao salvar, contendo apenas o caminho do diretório de onde as informações do programa foram salvas
