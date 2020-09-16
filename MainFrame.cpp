@@ -48,7 +48,7 @@ MainFrame::MainFrame(wxWindow* parent, const string& title, const wxPoint& pos, 
     ver = new wxBoxSizer(wxVERTICAL);
     ver->Add(siz, wxSizerFlags(0).Expand());
     ver->AddStretchSpacer(1);
-    ver->Add(siz2, wxSizerFlags(2).Expand());
+    ver->Add(siz2, wxSizerFlags(3).Expand());
 
     mainPanel->SetSizer(ver);
 

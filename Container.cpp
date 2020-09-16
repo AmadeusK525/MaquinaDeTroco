@@ -123,7 +123,7 @@ Container::Container(wxWindow* parent) : wxPanel(parent, -1, wxDefaultPosition, 
     contents->SetForegroundColour(wxColour(255, 255, 255));
 
     ver = new wxBoxSizer(wxVERTICAL);
-    ver->Add(contents, wxSizerFlags(0).Left().Border(wxALL, 5));
+    ver->Add(contents, wxSizerFlags(0).Left().Border(wxLEFT | wxTOP, 5));
     ver->Add(btnSizer, wxSizerFlags(1).Expand().Border(wxALL, 5));
     ver->Add(top, wxSizerFlags(4).Expand());
 
